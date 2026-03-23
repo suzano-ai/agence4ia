@@ -12,6 +12,11 @@ import {
   Video,
   Zap,
   ArrowRight,
+  UtensilsCrossed,
+  ShoppingCart,
+  Building2,
+  ClipboardList,
+  RefreshCw,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,9 +31,9 @@ export default function IntegrationPageContent() {
   ];
 
   const industries = [
-    { emoji: "🍽️", name: "Restauration", description: "Automatisez vos réservations, gérez vos avis clients et créez du contenu automatiquement" },
-    { emoji: "🛒", name: "E-commerce", description: "Chatbot support 24/7, relances automatiques, génération de fiches produits par IA" },
-    { emoji: "🏠", name: "Immobilier", description: "Qualification de leads automatique, visites virtuelles, suivi client intelligent" },
+    { icon: UtensilsCrossed, bgClass: "bg-teal", name: "Restauration", description: "Automatisez vos réservations, gérez vos avis clients et créez du contenu automatiquement" },
+    { icon: ShoppingCart, bgClass: "bg-purple", name: "E-commerce", description: "Chatbot support 24/7, relances automatiques, génération de fiches produits par IA" },
+    { icon: Building2, bgClass: "bg-amber", name: "Immobilier", description: "Qualification de leads automatique, visites virtuelles, suivi client intelligent" },
   ];
 
   const services = [
@@ -43,10 +48,10 @@ export default function IntegrationPageContent() {
   ];
 
   const processSteps = [
-    { number: "1", emoji: "📞", title: "Audit Gratuit", description: "Appel vidéo d'1h pour analyser vos besoins et identifier les opportunités IA dans votre business" },
-    { number: "2", emoji: "📋", title: "Proposition Sur Mesure", description: "Nous sélectionnons les blocs IA les plus adaptés et vous présentons un plan d'action clair" },
-    { number: "3", emoji: "⚡", title: "Déploiement", description: "Intégration complète dans vos outils existants. Délai moyen : 1 à 2 semaines" },
-    { number: "4", emoji: "🔄", title: "Support Continu", description: "Abonnement mensuel sans engagement. Vous restez libre, nous restons disponibles" },
+    { number: "1", icon: Phone, title: "Audit Gratuit", description: "Appel vidéo d'1h pour analyser vos besoins et identifier les opportunités IA dans votre business" },
+    { number: "2", icon: ClipboardList, title: "Proposition Sur Mesure", description: "Nous sélectionnons les blocs IA les plus adaptés et vous présentons un plan d'action clair" },
+    { number: "3", icon: Zap, title: "Déploiement", description: "Intégration complète dans vos outils existants. Délai moyen : 1 à 2 semaines" },
+    { number: "4", icon: RefreshCw, title: "Support Continu", description: "Abonnement mensuel sans engagement. Vous restez libre, nous restons disponibles" },
   ];
 
   return (
@@ -87,10 +92,12 @@ export default function IntegrationPageContent() {
         <div className="mb-20">
           <h2 className="text-2xl font-bold text-center mb-8">Secteurs que nous transformons</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            {industries.map(({ emoji, name, description }) => (
+            {industries.map(({ icon: Icon, bgClass, name, description }) => (
               <div key={name} className="neu-card p-6 relative">
                 <div className="corner-dot corner-dot-tl bg-teal" />
-                <div className="text-4xl mb-3">{emoji}</div>
+                <div className={`w-16 h-16 ${bgClass} rounded-lg flex items-center justify-center neu-border mb-4`}>
+                  <Icon className="w-8 h-8 text-white" />
+                </div>
                 <h3 className="font-bold text-xl mb-2">{name}</h3>
                 <p className="text-foreground/70">{description}</p>
               </div>
@@ -137,13 +144,15 @@ export default function IntegrationPageContent() {
             <div className="hidden md:block absolute top-8 left-[calc(12.5%)] right-[calc(12.5%)] h-1 bg-purple/30" />
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {processSteps.map(({ number, emoji, title, description }, index) => (
+              {processSteps.map(({ number, icon: Icon, title, description }, index) => (
                 <div key={number} className="text-center relative">
                   {/* Step number circle */}
                   <div className="w-16 h-16 bg-purple rounded-full flex items-center justify-center mx-auto mb-4 neu-border relative z-10">
                     <span className="text-2xl font-bold text-white">{number}</span>
                   </div>
-                  <div className="text-3xl mb-2">{emoji}</div>
+                  <div className="w-12 h-12 bg-purple/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                    <Icon className="w-6 h-6 text-purple" />
+                  </div>
                   <h3 className="font-bold text-lg mb-2">{title}</h3>
                   <p className="text-foreground/70 text-sm">{description}</p>
                   {index < 3 && (

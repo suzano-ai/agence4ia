@@ -36,11 +36,12 @@ const aiTools = [
 // Skill levels data
 const skillLevels = [
   {
-    emoji: "🟢",
+    level: 1,
     title: "Débutant",
     subtitle: "0 → Autonomie IA",
     bgClass: "bg-teal/10",
     borderClass: "border-teal",
+    levelBgClass: "bg-teal",
     items: [
       "Comprendre les LLMs",
       "Prompting efficace",
@@ -50,11 +51,12 @@ const skillLevels = [
     duration: "1-2h",
   },
   {
-    emoji: "🟡",
+    level: 2,
     title: "Intermédiaire",
     subtitle: "Autonomie → Productivité",
     bgClass: "bg-amber/10",
     borderClass: "border-amber",
+    levelBgClass: "bg-amber",
     items: [
       "Créer des workflows n8n/Make",
       "Utiliser les APIs IA",
@@ -64,11 +66,12 @@ const skillLevels = [
     duration: "3-5h",
   },
   {
-    emoji: "🟣",
+    level: 3,
     title: "Avancé",
     subtitle: "Productivité → Expertise",
     bgClass: "bg-purple/10",
     borderClass: "border-purple",
+    levelBgClass: "bg-purple",
     items: [
       "Déployer des agents IA",
       "Fine-tuning de modèles",
@@ -238,7 +241,7 @@ export default function LearnAI() {
                 className={`neu-card p-6 ${level.bgClass} border-2 ${level.borderClass} relative`}
               >
                 <div className="text-center mb-4">
-                  <span className="text-4xl">{level.emoji}</span>
+                  <div className={`w-16 h-16 ${level.levelBgClass} text-white font-black text-2xl flex items-center justify-center neu-border mx-auto mb-4 rounded-xl`}>{level.level}</div>
                   <h4 className="text-xl font-extrabold mt-2">{level.title}</h4>
                   <p className="text-foreground/70 font-medium">{level.subtitle}</p>
                 </div>
