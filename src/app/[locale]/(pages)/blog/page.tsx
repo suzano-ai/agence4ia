@@ -26,7 +26,7 @@ export default async function BlogPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <BlogList />
     </div>
   );

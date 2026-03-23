@@ -25,7 +25,7 @@ export default async function TeamPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <Team />
     </div>
   );

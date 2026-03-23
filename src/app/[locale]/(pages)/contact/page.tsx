@@ -26,7 +26,7 @@ export default async function ContactPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <Contact />
     </div>
   );

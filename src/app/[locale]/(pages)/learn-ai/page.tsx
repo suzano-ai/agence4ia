@@ -26,7 +26,7 @@ export default async function LearnAIPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <LearnAI />
     </div>
   );

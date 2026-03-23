@@ -42,7 +42,7 @@ export default async function BlogPostPage({
   }
 
   return (
-    <div className="py-8">
+    <div>
       <BlogPost slug={slug} />
     </div>
   );

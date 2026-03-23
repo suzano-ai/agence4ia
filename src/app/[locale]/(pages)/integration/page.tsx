@@ -26,7 +26,7 @@ export default async function IntegrationPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <IntegrationPageContent />
     </div>
   );

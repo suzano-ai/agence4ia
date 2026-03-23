@@ -26,7 +26,7 @@ export default async function AboutPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <About />
     </div>
   );

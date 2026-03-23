@@ -26,7 +26,7 @@ export default async function PricingPage({
   setRequestLocale(locale);
 
   return (
-    <div className="py-8">
+    <div>
       <Pricing />
     </div>
   );
