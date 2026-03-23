@@ -40,3 +40,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env.local
+
+# Build outputs
+.next/
+out/
+
+# Media files (too large for git)
+public/media/
+*.mp4
+*.wav
+
+# Environment
+.env.local
+.env
