@@ -25,9 +25,9 @@ export default function Footer() {
   return (
     <footer className="bg-dark-purple text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Logo and description */}
-          <div className="md:col-span-2">
+          <div className="sm:col-span-2 md:col-span-2">
             <div className="bg-cream rounded-lg p-2 inline-block mb-4">
               <Logo className="h-8" />
             </div>
@@ -70,11 +70,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-white/60 text-sm">
             © {new Date().getFullYear()} Agence4IA. {t("rights")}
           </p>
-          <div className="flex gap-6 text-sm">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
             <Link href={`/${locale}/privacy`} className="text-white/60 hover:text-amber">
               {t("privacy")}
             </Link>

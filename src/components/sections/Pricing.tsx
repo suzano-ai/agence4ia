@@ -30,7 +30,7 @@ export default function Pricing() {
           <span className="section-title bg-amber neu-border">{t("title")}</span>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-16">
           {t("heading")}
         </h2>
 
@@ -43,7 +43,7 @@ export default function Pricing() {
             <p className="text-foreground/70">{t("formation.subtitle")}</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
             {formationPlans.map((plan) => {
               const discountKey = `formation.plans.${plan}.discount` as const;
               const hasDiscount = t.has(discountKey);
@@ -79,7 +79,7 @@ export default function Pricing() {
             <p className="text-foreground/70">{t("integration.subtitle")}</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {integrationPlans.map(({ key, popular }) => (
               <div
                 key={key}
@@ -88,9 +88,9 @@ export default function Pricing() {
                 }`}
               >
                 {popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-purple text-white font-bold flex items-center gap-1">
-                      <Star className="w-3 h-3" /> Popular
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                    <Badge className="bg-purple text-white font-bold flex items-center gap-1 text-xs">
+                      <Star className="w-3 h-3 flex-shrink-0" /> Popular
                     </Badge>
                   </div>
                 )}

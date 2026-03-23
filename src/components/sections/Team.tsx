@@ -29,11 +29,11 @@ export default function Team() {
           </span>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-16">
           {t("heading")}
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {members.map(({ key, initials, color }) => (
             <div key={key} className="neu-card p-8 text-center relative">
               <div className="corner-dot corner-dot-tl bg-amber" />

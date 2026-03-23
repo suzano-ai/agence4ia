@@ -92,6 +92,15 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.section-title {
+  word-break: break-word;
 }
 
 /* Custom scrollbar */

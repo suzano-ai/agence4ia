@@ -81,7 +81,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Form */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4">
               {t("heading")}
             </h2>
             <p className="text-foreground/70 mb-8">{t("subtitle")}</p>
@@ -93,7 +93,7 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="fullName">{t("form.fullName")} *</Label>
                     <Input
@@ -122,7 +122,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="phone">{t("form.phone")} *</Label>
                     <Input

@@ -32,11 +32,11 @@ export default function BlogList() {
           </span>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-16">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-16">
           {t("heading")}
         </h1>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {blogSlugs.map((slug, index) => (
             <article key={slug} className="neu-card overflow-hidden relative group">
               <div className={`corner-dot corner-dot-tr ${dotColors[index]}`} />

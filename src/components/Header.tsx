@@ -92,13 +92,13 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-cream border-b-2 border-foreground">
+        <div className="lg:hidden bg-cream border-b-2 border-foreground w-full">
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block text-sm font-semibold hover:text-purple transition-colors"
+                className="block w-full py-2 text-base font-semibold hover:text-purple transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}

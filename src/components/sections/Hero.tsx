@@ -40,9 +40,9 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Main tagline */}
-        <div className="inline-block mb-6">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold">
-            <span className="bg-amber px-4 py-2 inline-block neu-border neu-shadow transform -rotate-1">
+        <div className="inline-block mb-6 max-w-full px-2">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold break-words">
+            <span className="bg-amber px-3 sm:px-4 py-2 inline-block neu-border neu-shadow transform -rotate-1">
               {t("tagline")}
             </span>
           </h1>
@@ -53,38 +53,38 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center w-full px-4 sm:px-0">
           <Button
             asChild
             size="lg"
-            className="bg-teal hover:bg-teal/90 text-white font-bold text-lg px-8 py-6 neu-border neu-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#010101] transition-all"
+            className="w-full sm:w-auto bg-teal hover:bg-teal/90 text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 neu-border neu-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#010101] transition-all"
           >
-            <a href={`/${locale}/learn-ai`} className="flex items-center gap-2">
-              <GraduationCap className="w-6 h-6" />
+            <a href={`/${locale}/learn-ai`} className="flex items-center justify-center gap-2">
+              <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6" />
               {t("ctaLearn")}
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           </Button>
 
           <Button
             asChild
             size="lg"
-            className="bg-purple hover:bg-purple/90 text-white font-bold text-lg px-8 py-6 neu-border neu-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#010101] transition-all"
+            className="w-full sm:w-auto bg-purple hover:bg-purple/90 text-white font-bold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 neu-border neu-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#010101] transition-all"
           >
-            <a href={`/${locale}/integration`} className="flex items-center gap-2">
-              <Bot className="w-6 h-6" />
+            <a href={`/${locale}/integration`} className="flex items-center justify-center gap-2">
+              <Bot className="w-5 h-5 sm:w-6 sm:h-6" />
               {t("ctaIntegration")}
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           </Button>
         </div>
 
         {/* Language switcher */}
-        <div className="flex items-center justify-center gap-3 mt-12">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-12">
           <Globe className="w-4 h-4 text-foreground/50" />
           <button
             onClick={() => switchLocale("fr")}
-            className={`px-4 py-1.5 text-sm font-bold neu-border transition-all ${
+            className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-bold neu-border transition-all ${
               locale === "fr"
                 ? "bg-amber text-foreground neu-shadow"
                 : "bg-white/60 text-foreground/60 hover:bg-amber/30"
@@ -94,7 +94,7 @@ export default function Hero() {
           </button>
           <button
             onClick={() => switchLocale("en")}
-            className={`px-4 py-1.5 text-sm font-bold neu-border transition-all ${
+            className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-bold neu-border transition-all ${
               locale === "en"
                 ? "bg-amber text-foreground neu-shadow"
                 : "bg-white/60 text-foreground/60 hover:bg-amber/30"

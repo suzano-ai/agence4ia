@@ -53,23 +53,23 @@ export default function IntegrationPageContent() {
         </div>
 
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">{t("heading")}</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4">{t("heading")}</h1>
           <p className="text-xl text-purple font-semibold mb-4">{t("subtitle")}</p>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
             {t("description")}
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-16">
           {processSteps.map(({ key, icon: Icon, color }, index) => (
             <div key={key} className="text-center">
               <div
-                className={`w-16 h-16 ${color} rounded-full flex items-center justify-center mx-auto mb-3 neu-border`}
+                className={`w-12 h-12 sm:w-16 sm:h-16 ${color} rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3 neu-border`}
               >
-                <Icon className="w-8 h-8 text-white" />
+                <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
-              <div className="font-bold text-lg">{t(`process.${key}`)}</div>
-              <p className="text-sm text-foreground/60">{t(`process.${key}Desc`)}</p>
+              <div className="font-bold text-sm sm:text-lg">{t(`process.${key}`)}</div>
+              <p className="text-xs sm:text-sm text-foreground/60">{t(`process.${key}Desc`)}</p>
               {index < 3 && (
                 <ArrowRight className="w-6 h-6 mx-auto mt-2 text-foreground/30 hidden md:block" />
               )}
@@ -85,15 +85,15 @@ export default function IntegrationPageContent() {
               <div
                 className={`corner-dot corner-dot-tr ${color.replace("bg-", "bg-")}`}
               />
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="flex-shrink-0">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+                <div className="flex-shrink-0 flex justify-center md:justify-start">
                   <div
-                    className={`w-16 h-16 ${color} rounded-lg flex items-center justify-center`}
+                    className={`w-14 h-14 sm:w-16 sm:h-16 ${color} rounded-lg flex items-center justify-center`}
                   >
-                    <Icon className="w-8 h-8 text-white" />
+                    <Icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                   </div>
                 </div>
-                <div className="flex-grow">
+                <div className="flex-grow text-center md:text-left">
                   <h3 className="font-bold text-xl mb-2">{t(`services.${key}.name`)}</h3>
                   <p className="text-foreground/70 mb-4">
                     {t(`services.${key}.description`)}

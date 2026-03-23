@@ -48,7 +48,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={nunito.variable}>
-      <body className="font-sans antialiased bg-cream text-foreground">
+      <body className="font-sans antialiased bg-cream text-foreground overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
