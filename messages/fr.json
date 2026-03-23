@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "title": "Agence4IA - Passez à l'IA. On s'occupe du reste.",
+    "description": "Agence4IA accompagne les entreprises dans leur transformation digitale grâce à l'intelligence artificielle. Formation IA et intégration de solutions IA pour automatiser votre business."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "learnAI": "Apprendre l'IA",
+    "integration": "Intégration IA",
+    "pricing": "Tarifs",
+    "team": "Équipe",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Passez à l'IA. On s'occupe du reste.",
+    "subtitle": "Formez-vous à l'IA ou laissez-nous automatiser votre business avec des solutions IA sur mesure.",
+    "ctaLearn": "Apprendre l'IA",
+    "ctaIntegration": "Intégration IA"
+  },
+  "about": {
+    "title": "À PROPOS",
+    "heading": "Qui sommes-nous ?",
+    "description": "Agence4IA est née de la conviction que l'intelligence artificielle doit être accessible à tous. Nous accompagnons les entrepreneurs, les PME et les professionnels dans leur transformation digitale, que ce soit par la formation ou l'intégration de solutions IA personnalisées.",
+    "mission": "Notre mission : démocratiser l'IA et permettre à chacun de gagner en productivité, en efficacité et en créativité."
+  },
+  "learnAI": {
+    "title": "APPRENDRE L'IA",
+    "heading": "Formation IA",
+    "subtitle": "Maîtrisez les outils IA qui révolutionnent le monde du travail",
+    "description": "Nos formations en ligne vous permettent d'acquérir les compétences nécessaires pour utiliser efficacement l'intelligence artificielle dans votre quotidien professionnel.",
+    "features": {
+      "workshops": "Ateliers en ligne via Google Meet",
+      "flexible": "Sessions flexibles : 1h à 5h+",
+      "certificate": "Certificat de formation",
+      "personalized": "Accompagnement personnalisé"
+    },
+    "target": "Pour qui ? Employés, entrepreneurs, étudiants, professionnels souhaitant maîtriser les outils IA."
+  },
+  "integration": {
+    "title": "INTÉGRATION IA",
+    "heading": "Solutions IA pour votre business",
+    "subtitle": "Automatisez et optimisez votre entreprise avec l'IA",
+    "description": "Nous intégrons des solutions d'intelligence artificielle sur mesure pour transformer et automatiser vos processus métier. Abonnement mensuel, sans engagement.",
+    "process": {
+      "audit": "Audit",
+      "auditDesc": "Analyse de vos besoins et processus",
+      "integration": "Intégration",
+      "integrationDesc": "Déploiement des solutions IA",
+      "automation": "Automatisation",
+      "automationDesc": "Configuration et optimisation",
+      "support": "Support",
+      "supportDesc": "Accompagnement continu"
+    },
+    "services": {
+      "chatbot": {
+        "name": "ChatBot Pro",
+        "description": "Chatbot IA pour votre site web et support client"
+      },
+      "voiceagent": {
+        "name": "VoiceAgent",
+        "description": "IA pour appels entrants et prise de rendez-vous"
+      },
+      "contentflow": {
+        "name": "ContentFlow",
+        "description": "Génération de contenu IA + publication automatique Instagram"
+      },
+      "bookingai": {
+        "name": "BookingAI",
+        "description": "Gestion IA des réservations et calendrier"
+      },
+      "sitemanager": {
+        "name": "SiteManager AI",
+        "description": "IA pour gérer et mettre à jour votre site web"
+      },
+      "soundforge": {
+        "name": "SoundForge AI",
+        "description": "Génération de musique par IA"
+      },
+      "videofactory": {
+        "name": "VideoFactory",
+        "description": "Création de vidéos IA + publication automatique"
+      },
+      "autopilot": {
+        "name": "AutoPilot",
+        "description": "Agents IA personnalisés pour vos tâches métier"
+      }
+    },
+    "target": "Pour qui ? Startups et PME souhaitant automatiser leur activité."
+  },
+  "pricing": {
+    "title": "TARIFS",
+    "heading": "Nos offres",
+    "formation": {
+      "title": "Formation IA",
+      "subtitle": "Tarifs par session",
+      "plans": {
+        "1h": {
+          "duration": "1 heure",
+          "price": "20€",
+          "description": "Session découverte"
+        },
+        "2h": {
+          "duration": "2 heures",
+          "price": "36€",
+          "discount": "-10%",
+          "description": "Session approfondie"
+        },
+        "3h": {
+          "duration": "3 heures",
+          "price": "51€",
+          "discount": "-15%",
+          "description": "Formation complète"
+        },
+        "5h": {
+          "duration": "5 heures",
+          "price": "80€",
+          "discount": "-20%",
+          "description": "Pack intensif"
+        }
+      },
+      "custom": "Forfait sur mesure ? Contactez-nous !"
+    },
+    "integration": {
+      "title": "Intégration IA",
+      "subtitle": "Abonnement mensuel, sans engagement",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "100€",
+          "period": "/mois",
+          "description": "1 service au choix",
+          "features": ["1 bloc service", "Support par email", "Mises à jour incluses"]
+        },
+        "growth": {
+          "name": "Growth",
+          "price": "250€",
+          "period": "/mois",
+          "description": "3 services au choix",
+          "features": ["3 blocs services", "Support prioritaire", "Mises à jour incluses", "Tableau de bord"]
+        },
+        "scale": {
+          "name": "Scale",
+          "price": "500€",
+          "period": "/mois",
+          "description": "6 services au choix",
+          "features": ["6 blocs services", "Support dédié", "Mises à jour incluses", "Tableau de bord avancé", "Formations incluses"],
+          "popular": true
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "1000€ - 5000€",
+          "period": "/mois",
+          "description": "Déploiement sur mesure",
+          "features": ["Services illimités", "Équipe dédiée", "SLA garanti", "Développement custom", "Intégrations avancées"]
+        }
+      }
+    }
+  },
+  "team": {
+    "title": "ÉQUIPE",
+    "heading": "Nos fondateurs",
+    "members": {
+      "aymane": {
+        "name": "Aymane ABDENNOUR",
+        "role": "Co-fondateur"
+      },
+      "bachir": {
+        "name": "Bachir GHAFIR IDRISSI",
+        "role": "Co-fondateur"
+      }
+    }
+  },
+  "blog": {
+    "title": "BLOG",
+    "heading": "Nos derniers articles",
+    "readMore": "Lire la suite",
+    "posts": {
+      "post1": {
+        "title": "Comment l'IA transforme les petites entreprises en 2025",
+        "excerpt": "Découvrez comment l'intelligence artificielle révolutionne le quotidien des PME et des entrepreneurs, de l'automatisation des tâches à l'amélioration de l'expérience client.",
+        "date": "15 mars 2025"
+      },
+      "post2": {
+        "title": "Les 5 meilleurs outils IA pour automatiser votre business",
+        "excerpt": "Notre sélection des outils d'intelligence artificielle les plus performants pour gagner du temps et booster votre productivité au quotidien.",
+        "date": "10 mars 2025"
+      },
+      "post3": {
+        "title": "Formation IA : pourquoi se former maintenant ?",
+        "excerpt": "L'IA évolue rapidement. Voici pourquoi il est crucial de se former dès maintenant pour rester compétitif sur le marché du travail.",
+        "date": "5 mars 2025"
+      }
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "heading": "Parlons de votre projet",
+    "subtitle": "Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.",
+    "form": {
+      "fullName": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Nom de l'entreprise (optionnel)",
+      "service": "Service qui vous intéresse",
+      "serviceOptions": {
+        "learnAI": "Apprendre l'IA (Formation)",
+        "integration": "Intégration IA"
+      },
+      "message": "Décrivez votre projet",
+      "budget": "Budget estimé (optionnel)",
+      "budgetOptions": {
+        "under500": "Moins de 500€",
+        "500to1000": "500€ - 1000€",
+        "1000to5000": "1000€ - 5000€",
+        "over5000": "Plus de 5000€"
+      },
+      "submit": "Envoyer",
+      "submitting": "Envoi en cours...",
+      "success": "Message envoyé avec succès ! Nous vous recontacterons bientôt.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "booking": {
+      "title": "Réserver un appel",
+      "description": "Préférez-vous discuter directement ? Réservez un créneau dans notre agenda."
+    }
+  },
+  "footer": {
+    "description": "Agence4IA accompagne les entreprises dans leur transformation digitale grâce à l'intelligence artificielle.",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Mentions légales"
+  }
+}

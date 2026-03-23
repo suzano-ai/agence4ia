@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "title": "Agence4IA - Switch to AI. We handle the rest.",
+    "description": "Agence4IA helps businesses with their digital transformation through artificial intelligence. AI training and integration of AI solutions to automate your business."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "learnAI": "Learn AI",
+    "integration": "AI Integration",
+    "pricing": "Pricing",
+    "team": "Team",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Switch to AI. We handle the rest.",
+    "subtitle": "Learn AI or let us automate your business with custom AI solutions.",
+    "ctaLearn": "Learn AI",
+    "ctaIntegration": "AI Integration"
+  },
+  "about": {
+    "title": "ABOUT",
+    "heading": "Who we are",
+    "description": "Agence4IA was born from the belief that artificial intelligence should be accessible to everyone. We support entrepreneurs, SMEs and professionals in their digital transformation, whether through training or the integration of customized AI solutions.",
+    "mission": "Our mission: democratize AI and enable everyone to gain productivity, efficiency and creativity."
+  },
+  "learnAI": {
+    "title": "LEARN AI",
+    "heading": "AI Training",
+    "subtitle": "Master the AI tools revolutionizing the world of work",
+    "description": "Our online training allows you to acquire the skills needed to effectively use artificial intelligence in your professional daily life.",
+    "features": {
+      "workshops": "Online workshops via Google Meet",
+      "flexible": "Flexible sessions: 1h to 5h+",
+      "certificate": "Training certificate",
+      "personalized": "Personalized support"
+    },
+    "target": "For whom? Employees, entrepreneurs, students, professionals wanting to master AI tools."
+  },
+  "integration": {
+    "title": "AI INTEGRATION",
+    "heading": "AI Solutions for your business",
+    "subtitle": "Automate and optimize your business with AI",
+    "description": "We integrate custom artificial intelligence solutions to transform and automate your business processes. Monthly subscription, no commitment.",
+    "process": {
+      "audit": "Audit",
+      "auditDesc": "Analysis of your needs and processes",
+      "integration": "Integration",
+      "integrationDesc": "Deployment of AI solutions",
+      "automation": "Automation",
+      "automationDesc": "Configuration and optimization",
+      "support": "Support",
+      "supportDesc": "Continuous assistance"
+    },
+    "services": {
+      "chatbot": {
+        "name": "ChatBot Pro",
+        "description": "AI chatbot for your website and customer support"
+      },
+      "voiceagent": {
+        "name": "VoiceAgent",
+        "description": "AI for inbound calls and appointment scheduling"
+      },
+      "contentflow": {
+        "name": "ContentFlow",
+        "description": "AI content generation + automatic Instagram posting"
+      },
+      "bookingai": {
+        "name": "BookingAI",
+        "description": "AI booking and calendar management"
+      },
+      "sitemanager": {
+        "name": "SiteManager AI",
+        "description": "AI to manage and update your website"
+      },
+      "soundforge": {
+        "name": "SoundForge AI",
+        "description": "AI music generation"
+      },
+      "videofactory": {
+        "name": "VideoFactory",
+        "description": "AI video creation + automatic publishing"
+      },
+      "autopilot": {
+        "name": "AutoPilot",
+        "description": "Custom AI agents for your business tasks"
+      }
+    },
+    "target": "For whom? Startups and SMEs looking to automate their business."
+  },
+  "pricing": {
+    "title": "PRICING",
+    "heading": "Our plans",
+    "formation": {
+      "title": "AI Training",
+      "subtitle": "Rates per session",
+      "plans": {
+        "1h": {
+          "duration": "1 hour",
+          "price": "€20",
+          "description": "Discovery session"
+        },
+        "2h": {
+          "duration": "2 hours",
+          "price": "€36",
+          "discount": "-10%",
+          "description": "In-depth session"
+        },
+        "3h": {
+          "duration": "3 hours",
+          "price": "€51",
+          "discount": "-15%",
+          "description": "Complete training"
+        },
+        "5h": {
+          "duration": "5 hours",
+          "price": "€80",
+          "discount": "-20%",
+          "description": "Intensive pack"
+        }
+      },
+      "custom": "Custom package? Contact us!"
+    },
+    "integration": {
+      "title": "AI Integration",
+      "subtitle": "Monthly subscription, no commitment",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "€100",
+          "period": "/month",
+          "description": "1 service of your choice",
+          "features": ["1 service block", "Email support", "Updates included"]
+        },
+        "growth": {
+          "name": "Growth",
+          "price": "€250",
+          "period": "/month",
+          "description": "3 services of your choice",
+          "features": ["3 service blocks", "Priority support", "Updates included", "Dashboard"]
+        },
+        "scale": {
+          "name": "Scale",
+          "price": "€500",
+          "period": "/month",
+          "description": "6 services of your choice",
+          "features": ["6 service blocks", "Dedicated support", "Updates included", "Advanced dashboard", "Training included"],
+          "popular": true
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "€1000 - €5000",
+          "period": "/month",
+          "description": "Custom deployment",
+          "features": ["Unlimited services", "Dedicated team", "Guaranteed SLA", "Custom development", "Advanced integrations"]
+        }
+      }
+    }
+  },
+  "team": {
+    "title": "TEAM",
+    "heading": "Our founders",
+    "members": {
+      "aymane": {
+        "name": "Aymane ABDENNOUR",
+        "role": "Co-founder"
+      },
+      "bachir": {
+        "name": "Bachir GHAFIR IDRISSI",
+        "role": "Co-founder"
+      }
+    }
+  },
+  "blog": {
+    "title": "BLOG",
+    "heading": "Our latest articles",
+    "readMore": "Read more",
+    "posts": {
+      "post1": {
+        "title": "How AI is transforming small businesses in 2025",
+        "excerpt": "Discover how artificial intelligence is revolutionizing the daily life of SMEs and entrepreneurs, from task automation to improving customer experience.",
+        "date": "March 15, 2025"
+      },
+      "post2": {
+        "title": "The 5 best AI tools to automate your business",
+        "excerpt": "Our selection of the most powerful artificial intelligence tools to save time and boost your daily productivity.",
+        "date": "March 10, 2025"
+      },
+      "post3": {
+        "title": "AI Training: why train now?",
+        "excerpt": "AI is evolving rapidly. Here's why it's crucial to train now to stay competitive in the job market.",
+        "date": "March 5, 2025"
+      }
+    }
+  },
+  "contact": {
+    "title": "CONTACT",
+    "heading": "Let's talk about your project",
+    "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+    "form": {
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company name (optional)",
+      "service": "Service you're interested in",
+      "serviceOptions": {
+        "learnAI": "Learn AI (Training)",
+        "integration": "AI Integration"
+      },
+      "message": "Describe your project",
+      "budget": "Estimated budget (optional)",
+      "budgetOptions": {
+        "under500": "Under €500",
+        "500to1000": "€500 - €1000",
+        "1000to5000": "€1000 - €5000",
+        "over5000": "Over €5000"
+      },
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "An error occurred. Please try again."
+    },
+    "booking": {
+      "title": "Book a call",
+      "description": "Prefer to chat directly? Book a slot in our calendar."
+    }
+  },
+  "footer": {
+    "description": "Agence4IA helps businesses with their digital transformation through artificial intelligence.",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Legal notice"
+  }
+}

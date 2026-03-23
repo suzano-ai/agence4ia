@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4ebe2;
+  --foreground: #010101;
+  --amber: #FFC466;
+  --purple: #8e59ff;
+  --dark-purple: #230661;
+  --teal: #3ab598;
+  --cream: #f4ebe2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-amber: var(--amber);
+  --color-purple: var(--purple);
+  --color-dark-purple: var(--dark-purple);
+  --color-teal: var(--teal);
+  --color-cream: var(--cream);
+  --font-sans: 'Nunito', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Neubrutalism styles */
+.neu-border {
+  border: 2px solid #010101;
+}
+
+.neu-shadow {
+  box-shadow: 4px 4px 0 #010101;
+}
+
+.neu-shadow-sm {
+  box-shadow: 2px 2px 0 #010101;
+}
+
+.neu-card {
+  border: 2px solid #010101;
+  box-shadow: 4px 4px 0 #010101;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.neu-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #010101;
+}
+
+.section-title {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-weight: 800;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Corner dots decoration */
+.corner-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.corner-dot-tl {
+  top: -6px;
+  left: -6px;
+}
+
+.corner-dot-tr {
+  top: -6px;
+  right: -6px;
+}
+
+.corner-dot-bl {
+  bottom: -6px;
+  left: -6px;
+}
+
+.corner-dot-br {
+  bottom: -6px;
+  right: -6px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-purple);
+}
