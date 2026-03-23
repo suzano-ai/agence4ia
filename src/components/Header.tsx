@@ -16,13 +16,13 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#about", label: t("about") },
-    { href: "#learn-ai", label: t("learnAI") },
-    { href: "#integration", label: t("integration") },
-    { href: "#pricing", label: t("pricing") },
-    { href: "#team", label: t("team") },
-    { href: "#blog", label: t("blog") },
-    { href: "#contact", label: t("contact") },
+    { href: `/${locale}/about`, label: t("about") },
+    { href: `/${locale}/learn-ai`, label: t("learnAI") },
+    { href: `/${locale}/integration`, label: t("integration") },
+    { href: `/${locale}/pricing`, label: t("pricing") },
+    { href: `/${locale}/team`, label: t("team") },
+    { href: `/${locale}/blog`, label: t("blog") },
+    { href: `/${locale}/contact`, label: t("contact") },
   ];
 
   const switchLocale = (newLocale: string) => {
@@ -41,13 +41,13 @@ export default function Header() {
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm font-semibold hover:text-purple transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -76,7 +76,7 @@ export default function Header() {
               asChild
               className="bg-purple hover:bg-dark-purple text-white font-bold neu-shadow-sm"
             >
-              <a href="#contact">{t("contact")}</a>
+              <Link href={`/${locale}/contact`}>{t("contact")}</Link>
             </Button>
           </div>
 
@@ -95,14 +95,14 @@ export default function Header() {
         <div className="lg:hidden bg-cream border-b-2 border-foreground">
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="block text-sm font-semibold hover:text-purple transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <div className="flex items-center gap-2 pt-3 border-t border-foreground/20">
               <Globe className="w-4 h-4" />

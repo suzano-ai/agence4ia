@@ -3,8 +3,6 @@ import { Nunito } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/config";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -52,9 +50,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={nunito.variable}>
       <body className="font-sans antialiased bg-cream text-foreground">
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

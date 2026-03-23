@@ -1,11 +1,13 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import { Video, Clock, Award, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function LearnAI() {
   const t = useTranslations("learnAI");
+  const locale = useLocale();
 
   const features = [
     { icon: Video, key: "workshops", color: "text-purple" },
@@ -51,7 +53,7 @@ export default function LearnAI() {
               asChild
               className="bg-teal hover:bg-teal/90 text-white font-bold neu-shadow"
             >
-              <a href="#pricing">Voir les tarifs</a>
+              <Link href={`/${locale}/pricing`}>{t("viewPricing")}</Link>
             </Button>
           </div>
 

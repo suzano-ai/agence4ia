@@ -10,16 +10,16 @@ export default function Footer() {
   const locale = useLocale();
 
   const quickLinks = [
-    { href: "#about", label: nav("about") },
-    { href: "#learn-ai", label: nav("learnAI") },
-    { href: "#integration", label: nav("integration") },
-    { href: "#pricing", label: nav("pricing") },
+    { href: `/${locale}/about`, label: nav("about") },
+    { href: `/${locale}/learn-ai`, label: nav("learnAI") },
+    { href: `/${locale}/integration`, label: nav("integration") },
+    { href: `/${locale}/pricing`, label: nav("pricing") },
   ];
 
   const contactLinks = [
-    { href: "#team", label: nav("team") },
-    { href: "#blog", label: nav("blog") },
-    { href: "#contact", label: nav("contact") },
+    { href: `/${locale}/team`, label: nav("team") },
+    { href: `/${locale}/blog`, label: nav("blog") },
+    { href: `/${locale}/contact`, label: nav("contact") },
   ];
 
   return (
@@ -40,12 +40,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-white/80 hover:text-amber transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -57,12 +57,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {contactLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-white/80 hover:text-amber transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

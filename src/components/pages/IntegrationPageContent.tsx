@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function Integration() {
+export default function IntegrationPageContent() {
   const t = useTranslations("integration");
   const locale = useLocale();
 
@@ -42,12 +42,10 @@ export default function Integration() {
   ];
 
   return (
-    <section id="integration" className="py-20 relative">
-      {/* Color bar accent */}
+    <section className="py-20 relative">
       <div className="absolute top-0 left-0 right-0 h-2 bg-purple" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section title */}
         <div className="text-center mb-12">
           <span className="section-title bg-purple text-white neu-border">
             {t("title")}
@@ -55,14 +53,13 @@ export default function Integration() {
         </div>
 
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">{t("heading")}</h2>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">{t("heading")}</h1>
           <p className="text-xl text-purple font-semibold mb-4">{t("subtitle")}</p>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
             {t("description")}
           </p>
         </div>
 
-        {/* Process steps */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {processSteps.map(({ key, icon: Icon, color }, index) => (
             <div key={key} className="text-center">
@@ -80,22 +77,32 @@ export default function Integration() {
           ))}
         </div>
 
-        {/* Services grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        <h2 className="text-2xl font-bold text-center mb-8">{t("servicesTitle")}</h2>
+
+        <div className="space-y-8 mb-12">
           {services.map(({ key, icon: Icon, color }) => (
-            <div key={key} className="neu-card p-6 relative group">
+            <div key={key} className="neu-card p-6 relative">
               <div
                 className={`corner-dot corner-dot-tr ${color.replace("bg-", "bg-")}`}
               />
-              <div
-                className={`w-12 h-12 ${color} rounded-lg flex items-center justify-center mb-4`}
-              >
-                <Icon className="w-6 h-6 text-white" />
+              <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex-shrink-0">
+                  <div
+                    className={`w-16 h-16 ${color} rounded-lg flex items-center justify-center`}
+                  >
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="flex-grow">
+                  <h3 className="font-bold text-xl mb-2">{t(`services.${key}.name`)}</h3>
+                  <p className="text-foreground/70 mb-4">
+                    {t(`services.${key}.description`)}
+                  </p>
+                  <p className="text-foreground/80">
+                    {t(`services.${key}.details`)}
+                  </p>
+                </div>
               </div>
-              <h3 className="font-bold text-lg mb-2">{t(`services.${key}.name`)}</h3>
-              <p className="text-sm text-foreground/70">
-                {t(`services.${key}.description`)}
-              </p>
             </div>
           ))}
         </div>

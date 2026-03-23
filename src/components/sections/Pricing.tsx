@@ -1,12 +1,14 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 export default function Pricing() {
   const t = useTranslations("pricing");
+  const locale = useLocale();
 
   const formationPlans = ["1h", "2h", "3h", "5h"] as const;
 
@@ -130,7 +132,7 @@ export default function Pricing() {
                       : "bg-white hover:bg-gray-50 text-foreground neu-border"
                   }`}
                 >
-                  <a href="#contact">Choisir</a>
+                  <Link href={`/${locale}/contact`}>{t("choose")}</Link>
                 </Button>
               </div>
             ))}

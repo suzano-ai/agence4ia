@@ -1,49 +1,50 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { blogSlugs } from "@/lib/blog";
 
 const blogImages = [
-  "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
-  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
-  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+  "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80", // AI / tech abstract
+  "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80", // productivity / laptop
+  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80", // learning / education
 ];
 
-export default function Blog() {
+export default function BlogList() {
   const t = useTranslations("blog");
+  const posts = useTranslations("blogPosts");
+  const locale = useLocale();
 
-  const posts = ["post1", "post2", "post3"] as const;
   const colors = ["bg-purple", "bg-teal", "bg-amber"];
   const dotColors = ["bg-teal", "bg-amber", "bg-purple"];
 
   return (
-    <section id="blog" className="py-20 bg-dark-purple/5 relative">
-      {/* Color bar accent */}
+    <section className="py-20 bg-dark-purple/5 relative">
       <div className="absolute top-0 left-0 right-0 h-2 bg-dark-purple" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section title */}
         <div className="text-center mb-12">
           <span className="section-title bg-dark-purple text-white neu-border">
             {t("title")}
           </span>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-16">
           {t("heading")}
-        </h2>
+        </h1>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {posts.map((post, index) => (
-            <article key={post} className="neu-card overflow-hidden relative group">
+          {blogSlugs.map((slug, index) => (
+            <article key={slug} className="neu-card overflow-hidden relative group">
               <div className={`corner-dot corner-dot-tr ${dotColors[index]}`} />
 
               <div className="h-48 relative overflow-hidden">
                 <Image
                   src={blogImages[index]}
-                  alt={t(`posts.${post}.title`)}
+                  alt={posts(`${slug}.title`)}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -52,23 +53,26 @@ export default function Blog() {
               <div className="p-6">
                 <div className="flex items-center gap-2 text-sm text-foreground/60 mb-3">
                   <Calendar className="w-4 h-4" />
-                  {t(`posts.${post}.date`)}
+                  {posts(`${slug}.date`)}
                 </div>
 
-                <h3 className="text-lg font-bold mb-3 group-hover:text-purple transition-colors">
-                  {t(`posts.${post}.title`)}
-                </h3>
+                <h2 className="text-lg font-bold mb-3 group-hover:text-purple transition-colors">
+                  {posts(`${slug}.title`)}
+                </h2>
 
                 <p className="text-foreground/70 text-sm mb-4">
-                  {t(`posts.${post}.excerpt`)}
+                  {posts(`${slug}.excerpt`)}
                 </p>
 
                 <Button
+                  asChild
                   variant="link"
                   className="p-0 h-auto font-semibold text-purple hover:text-dark-purple"
                 >
-                  {t("readMore")}
-                  <ArrowRight className="w-4 h-4 ml-1" />
+                  <Link href={`/${locale}/blog/${slug}`}>
+                    {t("readMore")}
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </Link>
                 </Button>
               </div>
             </article>

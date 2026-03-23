@@ -36,13 +36,16 @@
       "certificate": "Training certificate",
       "personalized": "Personalized support"
     },
-    "target": "For whom? Employees, entrepreneurs, students, professionals wanting to master AI tools."
+    "target": "For whom? Employees, entrepreneurs, students, professionals wanting to master AI tools.",
+    "viewPricing": "View pricing"
   },
   "integration": {
     "title": "AI INTEGRATION",
     "heading": "AI Solutions for your business",
     "subtitle": "Automate and optimize your business with AI",
     "description": "We integrate custom artificial intelligence solutions to transform and automate your business processes. Monthly subscription, no commitment.",
+    "servicesTitle": "Our AI services",
+    "viewPricing": "View pricing",
     "process": {
       "audit": "Audit",
       "auditDesc": "Analysis of your needs and processes",
@@ -56,35 +59,43 @@
     "services": {
       "chatbot": {
         "name": "ChatBot Pro",
-        "description": "AI chatbot for your website and customer support"
+        "description": "AI chatbot for your website and customer support",
+        "details": "Our ChatBot Pro uses the latest natural language processing technologies to deliver an exceptional customer experience. It instantly answers frequently asked questions, guides visitors to relevant information, qualifies leads, and can even take orders. Available 24/7, it significantly reduces your support team's workload while improving customer satisfaction."
       },
       "voiceagent": {
         "name": "VoiceAgent",
-        "description": "AI for inbound calls and appointment scheduling"
+        "description": "AI for inbound calls and appointment scheduling",
+        "details": "VoiceAgent is your intelligent phone assistant that handles your incoming calls professionally. It can answer common questions, schedule appointments directly in your calendar, transfer important calls, and send email summaries. No more missing business opportunities: VoiceAgent is always available to greet your customers."
       },
       "contentflow": {
         "name": "ContentFlow",
-        "description": "AI content generation + automatic Instagram posting"
+        "description": "AI content generation + automatic Instagram posting",
+        "details": "ContentFlow revolutionizes your social media presence. Our AI analyzes your brand, generates attractive visuals and engaging captions, then automatically posts to Instagram on an optimized schedule. You maintain editorial control while saving hours of work each week. Ideal for businesses that want to maintain an active presence without dedicating all their time to it."
       },
       "bookingai": {
         "name": "BookingAI",
-        "description": "AI booking and calendar management"
+        "description": "AI booking and calendar management",
+        "details": "BookingAI simplifies your appointment and booking management. The AI synchronizes your calendars, sends automatic reminders, handles cancellations and rescheduling, and optimizes your schedule to maximize productivity. Compatible with Google Calendar, Outlook, and major booking tools on the market."
       },
       "sitemanager": {
         "name": "SiteManager AI",
-        "description": "AI to manage and update your website"
+        "description": "AI to manage and update your website",
+        "details": "SiteManager AI keeps your website up to date effortlessly. It can modify texts, optimize SEO, update prices and information, and even create new pages according to your natural language instructions. No technical skills needed: just talk to the AI and it handles the rest."
       },
       "soundforge": {
         "name": "SoundForge AI",
-        "description": "AI music generation"
+        "description": "AI music generation",
+        "details": "SoundForge AI creates original, royalty-free music for your projects. Whether for videos, podcasts, advertisements, or in-store ambiance, our AI composes custom pieces according to your style, tempo, and duration preferences. Get a unique sonic identity without the prohibitive costs of traditional music licenses."
       },
       "videofactory": {
         "name": "VideoFactory",
-        "description": "AI video creation + automatic publishing"
+        "description": "AI video creation + automatic publishing",
+        "details": "VideoFactory transforms your ideas into professional videos. The AI generates scripts, selects visuals, adds animations and voiceover, then automatically publishes to your preferred platforms. Perfect for creating regular video content without a dedicated production team."
       },
       "autopilot": {
         "name": "AutoPilot",
-        "description": "Custom AI agents for your business tasks"
+        "description": "Custom AI agents for your business tasks",
+        "details": "AutoPilot is our most flexible solution. We create custom AI agents that automate your specific business processes: data processing, report generation, KPI tracking, email management, and much more. Each agent is trained on your data and adapted to your workflows for maximum efficiency."
       }
     },
     "target": "For whom? Startups and SMEs looking to automate their business."
@@ -92,6 +103,7 @@
   "pricing": {
     "title": "PRICING",
     "heading": "Our plans",
+    "choose": "Choose",
     "formation": {
       "title": "AI Training",
       "subtitle": "Rates per session",
@@ -175,6 +187,7 @@
   "blog": {
     "title": "BLOG",
     "heading": "Our latest articles",
+    "metaDescription": "Discover our articles on artificial intelligence, automation and digital transformation for businesses.",
     "readMore": "Read more",
     "posts": {
       "post1": {
@@ -192,6 +205,33 @@
         "excerpt": "AI is evolving rapidly. Here's why it's crucial to train now to stay competitive in the job market.",
         "date": "March 5, 2025"
       }
+    }
+  },
+  "blogPosts": {
+    "cta": "Let's discuss your project",
+    "comment-ia-transforme-pme-2025": {
+      "title": "How AI is transforming small businesses in 2025",
+      "excerpt": "Discover how artificial intelligence is revolutionizing the daily life of SMEs and entrepreneurs, from task automation to improving customer experience.",
+      "date": "March 15, 2025",
+      "readTime": "5 min read",
+      "author": "Agence4IA Team",
+      "content": "<h2>AI is no longer reserved for large companies</h2><p>In 2025, artificial intelligence has ceased to be a luxury reserved for multinationals. SMEs and entrepreneurs now have access to powerful and affordable tools that radically transform the way they work. This democratization of AI represents a historic opportunity for small businesses.</p><h2>Automating repetitive tasks</h2><p>One of the most immediate impacts of AI on small businesses concerns the automation of time-consuming tasks. Email management, invoicing, customer follow-up, appointment scheduling: all these activities can now be partially or fully automated thanks to AI assistants. A recent study shows that entrepreneurs using these tools save an average of 10 hours per week.</p><h2>A revolutionized customer experience</h2><p>Intelligent chatbots now enable 24/7 customer service, capable of answering common questions, taking orders, and even solving simple problems. For small businesses, this is equivalent to having a support team without the associated costs. Customers appreciate this permanent availability and the speed of responses.</p><h2>Personalized marketing at scale</h2><p>AI enables small businesses to create personalized marketing campaigns that rival those of big brands. Content generation, customer behavior analysis, ad optimization: AI tools democratize strategies that were once inaccessible. A local restaurant can now send personalized offers to each customer based on their preferences, without any manual intervention.</p><h2>Challenges to overcome</h2><p>This transformation is not without challenges. Training remains essential to get the most out of these tools. Entrepreneurs must also remain vigilant about data protection and AI ethics. But for those who take the plunge, the benefits far outweigh the initial obstacles.</p><h2>Conclusion</h2><p>In 2025, SMEs that don't integrate AI into their processes risk being disadvantaged against more agile competitors. The time for observation is over; it's time for action. The tools are there, accessible and powerful. All that remains is to adopt them.</p>"
+    },
+    "5-outils-ia-automatiser-business": {
+      "title": "The 5 best AI tools to automate your business",
+      "excerpt": "Our selection of the most powerful artificial intelligence tools to save time and boost your daily productivity.",
+      "date": "March 10, 2025",
+      "readTime": "7 min read",
+      "author": "Agence4IA Team",
+      "content": "<h2>Introduction</h2><p>Automation has become essential for modern entrepreneurs. With the proliferation of AI tools available on the market, it can be difficult to navigate. We've tested dozens of solutions to present you with the five must-have tools that will transform your productivity.</p><h2>1. Conversational AI assistants</h2><p>New generation chatbots no longer settle for scripted responses. They understand context, learn from each interaction, and can handle complex conversations. For your business, this means customer support available around the clock, automatic lead qualification, and a significant reduction in time spent answering recurring questions. The investment is usually recouped within weeks thanks to productivity gains.</p><h2>2. Content generation tools</h2><p>Creating quality content takes time. AI content generation tools can write blog posts, social media posts, product descriptions, and even marketing emails. The trick is to use them as a starting point, then add your personal touch. You divide creation time by three while maintaining professional quality.</p><h2>3. Intelligent scheduling assistants</h2><p>No more email ping-pong to find a common time slot. AI scheduling assistants manage your calendar, automatically propose available slots, send reminders, and can even reschedule appointments in case of unforeseen circumstances. Some go as far as optimizing your day by grouping similar tasks and preserving blocks of focused work time.</p><h2>4. Analysis and reporting tools</h2><p>AI excels at data analysis. Modern tools can compile your sales, marketing, and finance data, then generate clear reports with actionable recommendations. No more spending hours in spreadsheets: AI identifies trends, detects anomalies, and alerts you to areas of concern.</p><h2>5. Workflow automations</h2><p>These tools connect your different applications and automate workflows between them. A new lead in your CRM? The AI automatically creates a follow-up task, sends a personalized welcome email, and updates your dashboard. These automations, once configured, work 24/7 without intervention.</p><h2>Conclusion</h2><p>Adopting these tools represents an initial time investment for configuration, but the long-term gains are considerable. Start with a tool that addresses your most pressing need, master it, then gradually expand your arsenal. Automation isn't the future: it's the present.</p>"
+    },
+    "formation-ia-pourquoi-se-former-maintenant": {
+      "title": "AI Training: why train now?",
+      "excerpt": "AI is evolving rapidly. Here's why it's crucial to train now to stay competitive in the job market.",
+      "date": "March 5, 2025",
+      "readTime": "6 min read",
+      "author": "Agence4IA Team",
+      "content": "<h2>A revolution in progress</h2><p>Artificial intelligence is transforming the world of work at unprecedented speed. Every month, new tools emerge, new possibilities open up. In this context, waiting to train means risking being left behind. Professionals who master AI today will be the leaders of tomorrow.</p><h2>The skills gap is widening</h2><p>A recent study reveals that 67% of companies plan to increase their use of AI in the next two years, but only 12% of employees feel competent in this area. This gap creates a unique opportunity for those who choose to train now. AI skills have become a major differentiator in the job market.</p><h2>AI doesn't replace, it augments</h2><p>Contrary to widespread fears, AI doesn't come to replace professionals but to augment them. An accountant who masters AI analysis tools becomes more efficient. A marketer who knows how to use content generators doubles their productivity. An entrepreneur who automates their processes can focus on strategy. Training in AI means multiplying your value.</p><h2>Training accessible to everyone</h2><p>You no longer need to be an engineer to use AI. Modern tools are designed to be used by non-technical people. Current training focuses on practical use cases rather than theory. In just a few hours, it's possible to acquire skills directly applicable to your daily work.</p><h2>The cumulative effect of early learning</h2><p>Every AI skill acquired today facilitates learning future evolutions. The fundamentals remain the same even as tools evolve. The earlier you start, the more you build a solid foundation that will allow you to adapt to new technologies.</p><h2>A profitable investment</h2><p>The return on investment of AI training is measurable. Time savings, improved work quality, new professional opportunities: the benefits quickly exceed the cost and time invested. Many professionals report having recouped their training investment within weeks of use.</p><h2>Conclusion</h2><p>The best time to train in AI was yesterday. The second best time is now. Don't wait for AI to become a mandatory skill before starting to learn it. Get ahead, seize this opportunity, and position yourself as a professional of the AI era.</p>"
     }
   },
   "contact": {

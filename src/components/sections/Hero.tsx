@@ -1,11 +1,13 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { GraduationCap, Bot, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   const t = useTranslations("hero");
+  const locale = useLocale();
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
@@ -52,7 +54,7 @@ export default function Hero() {
             size="lg"
             className="bg-teal hover:bg-teal/90 text-white font-bold text-lg px-8 py-6 neu-border neu-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#010101] transition-all"
           >
-            <a href="#learn-ai" className="flex items-center gap-2">
+            <a href={`/${locale}/learn-ai`} className="flex items-center gap-2">
               <GraduationCap className="w-6 h-6" />
               {t("ctaLearn")}
               <ArrowRight className="w-5 h-5" />
@@ -64,7 +66,7 @@ export default function Hero() {
             size="lg"
             className="bg-purple hover:bg-purple/90 text-white font-bold text-lg px-8 py-6 neu-border neu-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0_#010101] transition-all"
           >
-            <a href="#integration" className="flex items-center gap-2">
+            <a href={`/${locale}/integration`} className="flex items-center gap-2">
               <Bot className="w-6 h-6" />
               {t("ctaIntegration")}
               <ArrowRight className="w-5 h-5" />
@@ -72,12 +74,7 @@ export default function Hero() {
           </Button>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-foreground rounded-full" />
-          </div>
-        </div>
+
       </div>
     </section>
   );

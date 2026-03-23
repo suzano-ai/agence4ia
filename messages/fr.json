@@ -36,13 +36,16 @@
       "certificate": "Certificat de formation",
       "personalized": "Accompagnement personnalisé"
     },
-    "target": "Pour qui ? Employés, entrepreneurs, étudiants, professionnels souhaitant maîtriser les outils IA."
+    "target": "Pour qui ? Employés, entrepreneurs, étudiants, professionnels souhaitant maîtriser les outils IA.",
+    "viewPricing": "Voir les tarifs"
   },
   "integration": {
     "title": "INTÉGRATION IA",
     "heading": "Solutions IA pour votre business",
     "subtitle": "Automatisez et optimisez votre entreprise avec l'IA",
     "description": "Nous intégrons des solutions d'intelligence artificielle sur mesure pour transformer et automatiser vos processus métier. Abonnement mensuel, sans engagement.",
+    "servicesTitle": "Nos services IA",
+    "viewPricing": "Voir les tarifs",
     "process": {
       "audit": "Audit",
       "auditDesc": "Analyse de vos besoins et processus",
@@ -56,35 +59,43 @@
     "services": {
       "chatbot": {
         "name": "ChatBot Pro",
-        "description": "Chatbot IA pour votre site web et support client"
+        "description": "Chatbot IA pour votre site web et support client",
+        "details": "Notre ChatBot Pro utilise les dernières technologies de traitement du langage naturel pour offrir une expérience client exceptionnelle. Il répond instantanément aux questions fréquentes, guide les visiteurs vers les informations pertinentes, qualifie les prospects et peut même prendre des commandes. Disponible 24h/24, il réduit considérablement la charge de travail de votre équipe support tout en améliorant la satisfaction client."
       },
       "voiceagent": {
         "name": "VoiceAgent",
-        "description": "IA pour appels entrants et prise de rendez-vous"
+        "description": "IA pour appels entrants et prise de rendez-vous",
+        "details": "VoiceAgent est votre assistant téléphonique intelligent qui gère vos appels entrants avec professionnalisme. Il peut répondre aux questions courantes, prendre des rendez-vous directement dans votre calendrier, transférer les appels importants et envoyer des résumés par email. Plus besoin de manquer des opportunités commerciales : VoiceAgent est toujours disponible pour accueillir vos clients."
       },
       "contentflow": {
         "name": "ContentFlow",
-        "description": "Génération de contenu IA + publication automatique Instagram"
+        "description": "Génération de contenu IA + publication automatique Instagram",
+        "details": "ContentFlow révolutionne votre présence sur les réseaux sociaux. Notre IA analyse votre marque, génère des visuels attractifs et des légendes engageantes, puis publie automatiquement sur Instagram selon un calendrier optimisé. Vous gardez le contrôle éditorial tout en économisant des heures de travail chaque semaine. Idéal pour les entreprises qui veulent maintenir une présence active sans y consacrer tout leur temps."
       },
       "bookingai": {
         "name": "BookingAI",
-        "description": "Gestion IA des réservations et calendrier"
+        "description": "Gestion IA des réservations et calendrier",
+        "details": "BookingAI simplifie la gestion de vos rendez-vous et réservations. L'IA synchronise vos calendriers, envoie des rappels automatiques, gère les annulations et les reprogrammations, et optimise votre planning pour maximiser votre productivité. Compatible avec Google Calendar, Outlook et les principaux outils de réservation du marché."
       },
       "sitemanager": {
         "name": "SiteManager AI",
-        "description": "IA pour gérer et mettre à jour votre site web"
+        "description": "IA pour gérer et mettre à jour votre site web",
+        "details": "SiteManager AI maintient votre site web à jour sans effort. Il peut modifier les textes, optimiser le SEO, mettre à jour les prix et les informations, et même créer de nouvelles pages selon vos instructions en langage naturel. Plus besoin de compétences techniques : parlez simplement à l'IA et elle s'occupe du reste."
       },
       "soundforge": {
         "name": "SoundForge AI",
-        "description": "Génération de musique par IA"
+        "description": "Génération de musique par IA",
+        "details": "SoundForge AI crée des musiques originales et libres de droits pour vos projets. Que ce soit pour des vidéos, des podcasts, des publicités ou une ambiance en magasin, notre IA compose des morceaux sur mesure selon vos préférences de style, tempo et durée. Obtenez une identité sonore unique sans les coûts prohibitifs des licences musicales traditionnelles."
       },
       "videofactory": {
         "name": "VideoFactory",
-        "description": "Création de vidéos IA + publication automatique"
+        "description": "Création de vidéos IA + publication automatique",
+        "details": "VideoFactory transforme vos idées en vidéos professionnelles. L'IA génère des scripts, sélectionne des visuels, ajoute des animations et une voix off, puis publie automatiquement sur vos plateformes préférées. Parfait pour créer du contenu vidéo régulier sans équipe de production dédiée."
       },
       "autopilot": {
         "name": "AutoPilot",
-        "description": "Agents IA personnalisés pour vos tâches métier"
+        "description": "Agents IA personnalisés pour vos tâches métier",
+        "details": "AutoPilot est notre solution la plus flexible. Nous créons des agents IA sur mesure qui automatisent vos processus métier spécifiques : traitement de données, génération de rapports, suivi de KPIs, gestion d'emails, et bien plus. Chaque agent est formé sur vos données et adapté à vos workflows pour une efficacité maximale."
       }
     },
     "target": "Pour qui ? Startups et PME souhaitant automatiser leur activité."
@@ -92,6 +103,7 @@
   "pricing": {
     "title": "TARIFS",
     "heading": "Nos offres",
+    "choose": "Choisir",
     "formation": {
       "title": "Formation IA",
       "subtitle": "Tarifs par session",
@@ -175,6 +187,7 @@
   "blog": {
     "title": "BLOG",
     "heading": "Nos derniers articles",
+    "metaDescription": "Découvrez nos articles sur l'intelligence artificielle, l'automatisation et la transformation digitale des entreprises.",
     "readMore": "Lire la suite",
     "posts": {
       "post1": {
@@ -192,6 +205,33 @@
         "excerpt": "L'IA évolue rapidement. Voici pourquoi il est crucial de se former dès maintenant pour rester compétitif sur le marché du travail.",
         "date": "5 mars 2025"
       }
+    }
+  },
+  "blogPosts": {
+    "cta": "Discutons de votre projet",
+    "comment-ia-transforme-pme-2025": {
+      "title": "Comment l'IA transforme les petites entreprises en 2025",
+      "excerpt": "Découvrez comment l'intelligence artificielle révolutionne le quotidien des PME et des entrepreneurs, de l'automatisation des tâches à l'amélioration de l'expérience client.",
+      "date": "15 mars 2025",
+      "readTime": "5 min de lecture",
+      "author": "Équipe Agence4IA",
+      "content": "<h2>L'IA n'est plus réservée aux grandes entreprises</h2><p>En 2025, l'intelligence artificielle a cessé d'être un luxe réservé aux multinationales. Les PME et les entrepreneurs ont désormais accès à des outils puissants et abordables qui transforment radicalement leur façon de travailler. Cette démocratisation de l'IA représente une opportunité historique pour les petites structures.</p><h2>L'automatisation des tâches répétitives</h2><p>L'un des impacts les plus immédiats de l'IA sur les petites entreprises concerne l'automatisation des tâches chronophages. La gestion des emails, la facturation, le suivi client, la planification des rendez-vous : toutes ces activités peuvent désormais être partiellement ou totalement automatisées grâce à des assistants IA. Une étude récente montre que les entrepreneurs utilisant ces outils gagnent en moyenne 10 heures par semaine.</p><h2>Une expérience client révolutionnée</h2><p>Les chatbots intelligents permettent aujourd'hui d'offrir un service client disponible 24h/24, capable de répondre aux questions courantes, de prendre des commandes et même de résoudre des problèmes simples. Pour les petites entreprises, c'est l'équivalent d'avoir une équipe support sans les coûts associés. Les clients apprécient cette disponibilité permanente et la rapidité des réponses.</p><h2>Le marketing personnalisé à grande échelle</h2><p>L'IA permet aux petites entreprises de créer des campagnes marketing personnalisées qui rivalisent avec celles des grandes marques. Génération de contenu, analyse des comportements clients, optimisation des publicités : les outils IA démocratisent des stratégies autrefois inaccessibles. Un restaurant local peut désormais envoyer des offres personnalisées à chaque client en fonction de ses préférences, sans aucune intervention manuelle.</p><h2>Les défis à relever</h2><p>Cette transformation n'est pas sans défis. La formation reste essentielle pour tirer le meilleur parti de ces outils. Les entrepreneurs doivent également rester vigilants sur la protection des données et l'éthique de l'IA. Mais pour ceux qui sautent le pas, les bénéfices dépassent largement les obstacles initiaux.</p><h2>Conclusion</h2><p>En 2025, les PME qui n'intègrent pas l'IA dans leurs processus risquent de se retrouver désavantagées face à leurs concurrents plus agiles. L'heure n'est plus à l'observation mais à l'action. Les outils sont là, accessibles et performants. Il ne reste qu'à les adopter.</p>"
+    },
+    "5-outils-ia-automatiser-business": {
+      "title": "Les 5 meilleurs outils IA pour automatiser votre business",
+      "excerpt": "Notre sélection des outils d'intelligence artificielle les plus performants pour gagner du temps et booster votre productivité au quotidien.",
+      "date": "10 mars 2025",
+      "readTime": "7 min de lecture",
+      "author": "Équipe Agence4IA",
+      "content": "<h2>Introduction</h2><p>L'automatisation est devenue le nerf de la guerre pour les entrepreneurs modernes. Avec la multiplication des outils IA disponibles sur le marché, il peut être difficile de s'y retrouver. Nous avons testé des dizaines de solutions pour vous présenter les cinq outils incontournables qui transformeront votre productivité.</p><h2>1. Les assistants IA conversationnels</h2><p>Les chatbots nouvelle génération ne se contentent plus de réponses scriptées. Ils comprennent le contexte, apprennent de chaque interaction et peuvent gérer des conversations complexes. Pour votre entreprise, cela signifie un support client disponible en permanence, une qualification automatique des prospects et une réduction significative du temps passé à répondre aux questions récurrentes. L'investissement est généralement amorti en quelques semaines grâce aux gains de productivité.</p><h2>2. Les outils de génération de contenu</h2><p>Créer du contenu de qualité prend du temps. Les outils IA de génération de contenu peuvent rédiger des articles de blog, des posts pour les réseaux sociaux, des descriptions de produits et même des emails marketing. L'astuce est de les utiliser comme point de départ, puis d'ajouter votre touche personnelle. Vous divisez ainsi par trois le temps de création tout en maintenant une qualité professionnelle.</p><h2>3. Les assistants de planification intelligente</h2><p>Fini le ping-pong d'emails pour trouver un créneau commun. Les assistants de planification IA gèrent votre calendrier, proposent automatiquement des créneaux disponibles, envoient des rappels et peuvent même reprogrammer les rendez-vous en cas d'imprévu. Certains vont jusqu'à optimiser votre journée en regroupant les tâches similaires et en préservant des plages de travail concentré.</p><h2>4. Les outils d'analyse et de reporting</h2><p>L'IA excelle dans l'analyse de données. Les outils modernes peuvent compiler vos données de vente, de marketing et de finance, puis générer des rapports clairs avec des recommandations actionables. Plus besoin de passer des heures dans des tableurs : l'IA identifie les tendances, détecte les anomalies et vous alerte sur les points d'attention.</p><h2>5. Les automatisations de workflow</h2><p>Ces outils connectent vos différentes applications et automatisent les flux de travail entre elles. Un nouveau lead dans votre CRM ? L'IA crée automatiquement une tâche de suivi, envoie un email de bienvenue personnalisé et met à jour votre tableau de bord. Ces automatisations, une fois configurées, fonctionnent 24h/24 sans intervention.</p><h2>Conclusion</h2><p>L'adoption de ces outils représente un investissement en temps initial pour la configuration, mais les gains à long terme sont considérables. Commencez par un outil qui répond à votre besoin le plus pressant, maîtrisez-le, puis élargissez progressivement votre arsenal. L'automatisation n'est pas l'avenir : c'est le présent.</p>"
+    },
+    "formation-ia-pourquoi-se-former-maintenant": {
+      "title": "Formation IA : pourquoi se former maintenant ?",
+      "excerpt": "L'IA évolue rapidement. Voici pourquoi il est crucial de se former dès maintenant pour rester compétitif sur le marché du travail.",
+      "date": "5 mars 2025",
+      "readTime": "6 min de lecture",
+      "author": "Équipe Agence4IA",
+      "content": "<h2>Une révolution en cours</h2><p>L'intelligence artificielle transforme le monde du travail à une vitesse sans précédent. Chaque mois, de nouveaux outils émergent, de nouvelles possibilités s'ouvrent. Dans ce contexte, attendre pour se former, c'est prendre le risque de se retrouver dépassé. Les professionnels qui maîtrisent l'IA aujourd'hui seront les leaders de demain.</p><h2>Le gap de compétences s'élargit</h2><p>Une étude récente révèle que 67% des entreprises prévoient d'augmenter leur utilisation de l'IA dans les deux prochaines années, mais seulement 12% des employés se sentent compétents dans ce domaine. Ce décalage crée une opportunité unique pour ceux qui choisissent de se former maintenant. Les compétences IA sont devenues un différenciateur majeur sur le marché de l'emploi.</p><h2>L'IA ne remplace pas, elle augmente</h2><p>Contrairement aux craintes répandues, l'IA ne vient pas remplacer les professionnels mais les augmenter. Un comptable qui maîtrise les outils d'analyse IA devient plus performant. Un marketeur qui sait utiliser les générateurs de contenu double sa productivité. Un entrepreneur qui automatise ses processus peut se concentrer sur la stratégie. Se former à l'IA, c'est multiplier sa valeur.</p><h2>Des formations accessibles à tous</h2><p>Il n'est plus nécessaire d'être ingénieur pour utiliser l'IA. Les outils modernes sont conçus pour être utilisés par des non-techniciens. Les formations actuelles se concentrent sur les cas d'usage pratiques plutôt que sur la théorie. En quelques heures, il est possible d'acquérir des compétences directement applicables dans son travail quotidien.</p><h2>L'effet cumulatif de l'apprentissage précoce</h2><p>Chaque compétence IA acquise aujourd'hui facilite l'apprentissage des évolutions futures. Les fondamentaux restent les mêmes même si les outils évoluent. Plus vous commencez tôt, plus vous construisez une base solide qui vous permettra de vous adapter aux nouvelles technologies.</p><h2>Un investissement rentable</h2><p>Le retour sur investissement d'une formation IA est mesurable. Les gains de temps, l'amélioration de la qualité du travail, les nouvelles opportunités professionnelles : les bénéfices dépassent rapidement le coût et le temps investis. De nombreux professionnels rapportent avoir rentabilisé leur formation en quelques semaines d'utilisation.</p><h2>Conclusion</h2><p>Le meilleur moment pour se former à l'IA était hier. Le deuxième meilleur moment, c'est maintenant. N'attendez pas que l'IA devienne une compétence obligatoire pour commencer à l'apprendre. Prenez de l'avance, saisissez cette opportunité et positionnez-vous comme un professionnel de l'ère IA.</p>"
     }
   },
   "contact": {
