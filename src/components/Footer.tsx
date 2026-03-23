@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
+import { MessageCircle, Mail } from "lucide-react";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -67,10 +68,22 @@ export default function Footer() {
               ))}
               <li>
                 <a
-                  href="tel:+33777345056"
-                  className="text-white/80 hover:text-amber transition-colors"
+                  href="https://wa.me/33777345056"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#25D366] text-white text-sm font-bold px-3 py-1.5 rounded hover:bg-[#20bd5a] transition-colors mt-2"
                 >
-                  +33 7 77 34 50 56
+                  <MessageCircle className="w-4 h-4" />
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contact@agence4ia.com"
+                  className="inline-flex items-center gap-2 text-white/80 hover:text-amber transition-colors text-sm mt-1"
+                >
+                  <Mail className="w-4 h-4" />
+                  contact@agence4ia.com
                 </a>
               </li>
             </ul>

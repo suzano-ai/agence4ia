@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 
@@ -73,10 +73,13 @@ export default function Header() {
               </button>
             </div>
             <a
-              href="tel:+33777345056"
-              className="text-xs text-foreground/60 hover:text-purple transition-colors"
+              href="https://wa.me/33777345056"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#25D366] text-white text-sm font-bold px-3 py-1.5 neu-border hover:bg-[#20bd5a] transition-colors"
             >
-              +33 7 77 34 50 56
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
             </a>
             <Button
               asChild
