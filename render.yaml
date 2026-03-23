@@ -4,15 +4,13 @@ services:
     runtime: node
     region: frankfurt
     plan: free
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --legacy-peer-deps && npm run build
     startCommand: npm start
-    healthCheckPath: /
+    healthCheckPath: /fr
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: "20"
       - key: RESEND_API_KEY
-        sync: false
-      - key: NOTION_API_KEY
-        sync: false
-      - key: NOTION_DATABASE_ID
         sync: false
