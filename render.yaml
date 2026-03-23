@@ -4,13 +4,13 @@ services:
     runtime: node
     region: frankfurt
     plan: free
-    buildCommand: npm install --legacy-peer-deps && npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm start
     healthCheckPath: /fr
     envVars:
       - key: NODE_ENV
         value: production
       - key: NODE_VERSION
-        value: "20"
+        value: "20.11.0"
       - key: RESEND_API_KEY
         sync: false
