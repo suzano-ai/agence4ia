@@ -50,9 +50,14 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      // Simulate API call - replace with actual Notion/Resend integration
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log("Form data:", data);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("Failed");
+
       setStatus("success");
       reset();
     } catch {
