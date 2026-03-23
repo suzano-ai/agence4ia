@@ -1,13 +1,18 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
-import { GraduationCap, Bot, ArrowRight } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
+import { GraduationCap, Bot, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   const t = useTranslations("hero");
   const locale = useLocale();
+  const router = useRouter();
+
+  const switchLocale = (newLocale: string) => {
+    router.push(`/${newLocale}`);
+  };
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
@@ -74,6 +79,30 @@ export default function Hero() {
           </Button>
         </div>
 
+        {/* Language switcher */}
+        <div className="flex items-center justify-center gap-3 mt-12">
+          <Globe className="w-4 h-4 text-foreground/50" />
+          <button
+            onClick={() => switchLocale("fr")}
+            className={`px-4 py-1.5 text-sm font-bold neu-border transition-all ${
+              locale === "fr"
+                ? "bg-amber text-foreground neu-shadow"
+                : "bg-white/60 text-foreground/60 hover:bg-amber/30"
+            }`}
+          >
+            🇫🇷 Français
+          </button>
+          <button
+            onClick={() => switchLocale("en")}
+            className={`px-4 py-1.5 text-sm font-bold neu-border transition-all ${
+              locale === "en"
+                ? "bg-amber text-foreground neu-shadow"
+                : "bg-white/60 text-foreground/60 hover:bg-amber/30"
+            }`}
+          >
+            🇬🇧 English
+          </button>
+        </div>
 
       </div>
     </section>
