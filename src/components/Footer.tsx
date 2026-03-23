@@ -65,6 +65,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href="tel:+33777345056"
+                  className="text-white/80 hover:text-amber transition-colors"
+                >
+                  +33 7 77 34 50 56
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -84,7 +84,14 @@ export default function Contact() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4">
               {t("heading")}
             </h2>
-            <p className="text-foreground/70 mb-8">{t("subtitle")}</p>
+            <p className="text-foreground/70 mb-4">{t("subtitle")}</p>
+            <a
+              href="tel:+33777345056"
+              className="inline-flex items-center gap-2 text-lg font-semibold text-purple hover:text-dark-purple transition-colors mb-8"
+            >
+              <span>📞</span>
+              <span>+33 7 77 34 50 56</span>
+            </a>
 
             {status === "success" ? (
               <div className="neu-card p-8 text-center">

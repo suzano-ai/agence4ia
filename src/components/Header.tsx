@@ -72,6 +72,12 @@ export default function Header() {
                 EN
               </button>
             </div>
+            <a
+              href="tel:+33777345056"
+              className="text-xs text-foreground/60 hover:text-purple transition-colors"
+            >
+              +33 7 77 34 50 56
+            </a>
             <Button
               asChild
               className="bg-purple hover:bg-dark-purple text-white font-bold neu-shadow-sm"
