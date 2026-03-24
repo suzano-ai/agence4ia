@@ -43,11 +43,21 @@ export async function generateMetadata({
       description: t.description,
       locale: locale,
       type: "website",
-      images: [{ url: "/favicon-512.png", width: 512, height: 512 }],
+      siteName: "Agence4IA",
+      images: [
+        {
+          url: "https://agence4ia.onrender.com/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Agence4IA — Passez à l'IA. On s'occupe du reste.",
+        },
+      ],
     },
     twitter: {
-      card: "summary",
-      images: ["/favicon-512.png"],
+      card: "summary_large_image",
+      title: t.title,
+      description: t.description,
+      images: ["https://agence4ia.onrender.com/og-image.png"],
     },
   };
 }
