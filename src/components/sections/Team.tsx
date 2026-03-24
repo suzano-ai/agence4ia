@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link2, Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function Team() {
   const t = useTranslations("team");
@@ -11,11 +12,17 @@ export default function Team() {
       key: "aymane",
       initials: "AA",
       color: "bg-purple",
+      photo: "/team-aymane.jpg",
+      linkedin: "https://www.linkedin.com/in/aymaneabdennour/",
+      email: "aymane.abdennour@gmail.com",
     },
     {
       key: "bachir",
       initials: "BG",
       color: "bg-teal",
+      photo: "/team-bachir.jpg",
+      linkedin: "https://www.linkedin.com/in/bachir-ghafir-el-idrissi-61356021a/",
+      email: "bachiridrissi8@gmail.com",
     },
   ];
 
@@ -34,16 +41,20 @@ export default function Team() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-          {members.map(({ key, initials, color }) => (
+          {members.map(({ key, initials, color, photo, linkedin, email }) => (
             <div key={key} className="neu-card p-8 text-center relative">
               <div className="corner-dot corner-dot-tl bg-amber" />
               <div className="corner-dot corner-dot-br bg-teal" />
 
-              {/* Avatar placeholder */}
-              <div
-                className={`w-32 h-32 ${color} rounded-full flex items-center justify-center mx-auto mb-6 neu-border text-white text-4xl font-bold`}
-              >
-                {initials}
+              {/* Photo */}
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 neu-border overflow-hidden relative">
+                <Image
+                  src={photo}
+                  alt={t(`members.${key}.name`)}
+                  fill
+                  className="object-cover"
+                  sizes="128px"
+                />
               </div>
 
               <h3 className="text-xl font-bold mb-1">
@@ -53,17 +64,21 @@ export default function Team() {
                 {t(`members.${key}.role`)}
               </p>
 
-              {/* Social links placeholder */}
+              {/* Social links */}
               <div className="flex justify-center gap-3">
                 <a
-                  href="#"
+                  href={linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-foreground/5 hover:bg-purple hover:text-white rounded-full transition-colors"
+                  aria-label="LinkedIn"
                 >
                   <Link2 className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href={`mailto:${email}`}
                   className="p-2 bg-foreground/5 hover:bg-purple hover:text-white rounded-full transition-colors"
+                  aria-label="Email"
                 >
                   <Mail className="w-5 h-5" />
                 </a>
