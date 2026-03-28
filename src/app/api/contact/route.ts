@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import { supabaseAdmin } from "@/lib/supabase";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -210,6 +211,26 @@ export async function POST(req: NextRequest) {
     if (clientResult.error || internalResult.error) {
       console.error("Resend error:", clientResult.error || internalResult.error);
       return NextResponse.json({ error: "Email sending failed" }, { status: 500 });
+    }
+
+    // Save lead to Supabase CRM
+    if (process.env.NEXT_PUBLIC_SUPABASE_URL) {
+      const { error: dbError } = await supabaseAdmin.from("leads").insert({
+        full_name: fullName,
+        email,
+        phone,
+        company: company ?? null,
+        service,
+        message,
+        budget: budget ?? null,
+        locale: req.headers.get("accept-language")?.startsWith("en") ? "en" : "fr",
+        source: req.headers.get("referer") ?? "website",
+        status: "new",
+      });
+      if (dbError) {
+        console.error("Supabase insert error:", dbError.message);
+        // Don't fail the request — email was already sent
+      }
     }
 
     return NextResponse.json({ success: true });
