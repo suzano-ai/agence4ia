@@ -23,9 +23,25 @@ export async function generateMetadata({
   const messages = await getMessages();
   const t = messages.metadata as { title: string; description: string };
 
+  const baseUrl = "https://agence4ia.com";
+
   return {
-    title: t.title,
+    metadataBase: new URL(baseUrl),
+    title: {
+      default: t.title,
+      template: "%s | Agence4IA",
+    },
     description: t.description,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any" },
@@ -41,12 +57,14 @@ export async function generateMetadata({
     openGraph: {
       title: t.title,
       description: t.description,
-      locale: locale,
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      alternateLocale: locale === "fr" ? "en_US" : "fr_FR",
       type: "website",
       siteName: "Agence4IA",
+      url: `${baseUrl}/${locale}`,
       images: [
         {
-          url: "https://agence4ia.onrender.com/og-image.png",
+          url: `${baseUrl}/og-image.png`,
           width: 1200,
           height: 630,
           alt: "Agence4IA — Passez à l'IA. On s'occupe du reste.",
@@ -57,7 +75,10 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t.title,
       description: t.description,
-      images: ["https://agence4ia.onrender.com/og-image.png"],
+      images: [`${baseUrl}/og-image.png`],
+    },
+    verification: {
+      google: "google-site-verification",
     },
   };
 }
