@@ -109,7 +109,7 @@ The user will provide exact form fields later. For now use:
 - Message / describe your project
 - Budget range (optional)
 
-**Form submissions:** Send to Notion (via API) + send confirmation email via Resend
+**Form submissions:** Send confirmation email via Resend
 
 ---
 
@@ -135,7 +135,6 @@ The user will provide exact form fields later. For now use:
 
 ## Integrations
 - **Resend** — transactional email (form confirmations)
-- **Notion API** — CRM / lead capture destination
 - **Cal.com** — booking embed
 - **next-intl** — FR/EN i18n
 
