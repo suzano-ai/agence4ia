@@ -41,9 +41,6 @@ Create a `.env.local` file with:
 # Resend (for email confirmations)
 RESEND_API_KEY=your_resend_api_key
 
-# Notion (for lead capture)
-NOTION_API_KEY=your_notion_api_key
-NOTION_DATABASE_ID=your_database_id
 ```
 
 ## Project Structure
